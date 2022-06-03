@@ -6,13 +6,13 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [:white_check_mark:] 1-3: _Unix & Shell- Part 1_
-- [:white_check_mark:] 1-4: _Unix & Shell- Part 2_
+- [:green_check_mark:] 1-3: _Unix & Shell- Part 1_
+- [:green_check_mark:] 1-4: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
 
-- [:white_check_mark:] 2-1: _O que é e para que serve?_
-- [:white_check_mark:] 2-2: _Entendendo os comandos_
+- [:green_check_mark:] 2-1: _O que é e para que serve?_
+- [:green_check_mark:] 2-2: _Entendendo os comandos_
 - [ ] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução - HTML & CSS
