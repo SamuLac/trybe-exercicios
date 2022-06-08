@@ -17,3 +17,7 @@ O objetivo dos exercícios desse dia é treinar os comandos básicos de CSS para
 4. Coloque o tamanho do parágrafo com o tamanho de 3 vezes o padrão do body
 5. Explore as propriedades font-style, line-height, text-align e text-decoration
 6. Troque a cor de fundo de cada item da lista para a cor correspondente ao texto
+
+###### Parte 3
+
+1. Coloque todo o CSS criado até agora nos exercícios anteriores em um arquivo externo.
