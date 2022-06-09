@@ -18,8 +18,8 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 ##### Bloco 3: Introdução - HTML & CSS
 
 - [:heavy_check_mark:] 3-1: _HTML & CSS - Estruturas de página_
-- [:white_check_mark:] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [:white_check_mark:] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [:heavy_check_mark:] 3-2: _HTML & CSS - Primeiros passos em CSS_
+- [:heavy_check_mark:] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [:white_check_mark:] 3-4: _HTML Semântico_
 - [:white_check_mark:] 3-5: _[Projeto - HTML & CSS]()_
 
