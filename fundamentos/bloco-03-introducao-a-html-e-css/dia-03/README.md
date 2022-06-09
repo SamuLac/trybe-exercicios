@@ -1,6 +1,7 @@
 # DIA 3
 
 O objetivo dos exercícios desse dia é aprender e treinar a estilização via "BOX MODEL"
+OBS: A partit de hoje cada parte estará anexada a um aquivo correspondente "Parte 2 = index2.html"
 
 ###### Parte 1
 Os exercícios estão comentados no arquivo style.css, segue um treixo do código:
@@ -38,3 +39,13 @@ Os exercícios estão comentados no arquivo style.css, segue um treixo do códig
  - A fonte do item mude quando ele for clicado.
 4. Adicione uma lista não ordenada com, pelo menos, 3 características que você gosta.
 5. No 'style.css', adicione a propriedade 'list-style: none' para ambas as listas.
+
+###### Parte 4
+
+Para o próximo exercício, você não deve atribuir nenhuma classe ou id aos componentes, mas apenas utilizar pseudoclasses para individualizar cada elemento!
+
+1. Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda.
+2. Faça cada div ter uma cor própria.
+3. Estilize cada uma das tags h3.
+4. Faça a terceira div ser maior que as demais.
+5. Deixe as tags ímpares h3 com o texto em itálico.
