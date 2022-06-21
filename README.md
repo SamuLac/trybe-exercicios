@@ -20,12 +20,12 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [:heavy_check_mark:] 3-1: _HTML & CSS - Estruturas de página_
 - [:heavy_check_mark:] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [:heavy_check_mark:] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [:white_check_mark:] 3-4: _HTML Semântico_
-- [:white_check_mark:] 3-5: _[Projeto - HTML & CSS]()_
+- [:heavy_check_mark:] 3-4: _HTML Semântico_
+- [:heavy_check_mark:] 3-5: _[Projeto - Lessons Learned]()_
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [:white_check_mark:] 4-1: _JavaScript - Primeiros passos_
+- [:heavy_check_mark:] 4-1: _JavaScript - Primeiros passos_
 - [:white_check_mark:] 4-2: _JavaScript - Array e loop For_
 - [:white_check_mark:] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [:white_check_mark:] 4-4: _JavaScript - Objetos e funções_
