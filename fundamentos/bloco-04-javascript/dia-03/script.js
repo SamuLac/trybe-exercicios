@@ -189,7 +189,7 @@ Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que 
 
 //RESPOSTA
 
-let n = 7;
+/*let n = 7;
 let linha = "";
 
 bordaEsquerda = Math.floor(n/2);
@@ -208,4 +208,21 @@ for(i=0;i<n;i+=2){
     linha = "";
     bordaDireita+=1;
     bordaEsquerda-=1;
+}*/
+
+
+
+
+/*Exercício Bonus 6
+Faça um programa que diz se um número definido numa variável é primo ou não.*/
+
+//RESPOSTA
+
+let n = 48;
+let eprimo = true;
+for (let divisor = 2; divisor < n; divisor+=1) {
+    if (n%divisor === 0) {
+        eprimo = false;
+    }
 }
+console.log("O número ",n,"é primo?:",eprimo);
