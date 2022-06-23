@@ -39,7 +39,7 @@ Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que 
 
 //RESPOSTA (MAIOR)
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
+/*let array = ['java', 'javascript', 'python', 'html', 'css'];
 
 let maior = array[0].length;
 for (let i = 1; i < array.length; i+=1) {
@@ -57,4 +57,29 @@ for (let i = 1; i < array.length; i+=1) {
         menor = array[i].length;
     } 
 }
-console.log(menor);
+console.log(menor);*/
+
+
+
+
+/*Exercício 4
+Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.*/
+
+//RESPOSTA
+let maior = 0;
+
+for (let i = 2; i <= 50; i+=1) {
+    let eprimo = true;
+    for (let divisor = 2; divisor < i; divisor+=1) {
+        if (i%divisor === 0) {
+            eprimo = false;
+        }
+    }
+    
+    if (eprimo && i>maior) {
+        maior = i;
+    }
+
+}
+
+console.log(maior);
