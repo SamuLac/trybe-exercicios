@@ -132,9 +132,9 @@ Agora inverta o lado do triângulo.*/
 
 //RESPOSTA
 
-let n = 5;
+/*let n = 5;
 let linha = "";
-for(i=n;i>0n;i-=1){
+for(i=n;i>n;i-=1){
     for(j=0; j<n ; j+=1){
         if(j+1 >= i){
             linha+='*'
@@ -144,4 +144,40 @@ for(i=n;i>0n;i-=1){
     }
     console.log(linha);
     linha = "";
+}*/
+
+
+
+
+/*Exercício Bonus 4
+Depois, faça uma pirâmide com n asteriscos de base n.*/
+
+//RESPOSTA
+//Funciona apenas com números ímpares
+let n = 7;
+let linha = "";
+let meioMaior=0;
+let meioMenor=0;
+
+if(n%2 === 0){
+    meioMenor = n/2-1;
+    meioMaior = n/2;
+}else{
+    meioMenor = Math.floor(n/2);
+    meioMaior = Math.floor(n/2);
 }
+
+for(i=0;i<n;i+=2){
+    for(j=0; j<n ; j+=1){
+        if(j< meioMenor || j > meioMaior){
+            linha+=' '
+        }else{
+            linha+='*'
+        }
+    }
+    console.log(linha);
+    linha = "";
+    meioMaior+=1;
+    meioMenor-=1;
+}
+
