@@ -153,8 +153,8 @@ for(i=n;i>n;i-=1){
 Depois, faça uma pirâmide com n asteriscos de base n.*/
 
 //RESPOSTA
-//Funciona apenas com números ímpares
-let n = 7;
+
+/*let n = 7;
 let linha = "";
 let meioMaior=0;
 let meioMenor=0;
@@ -179,5 +179,33 @@ for(i=0;i<n;i+=2){
     linha = "";
     meioMaior+=1;
     meioMenor-=1;
-}
+}*/
 
+
+
+
+/*Exercício Bonus 5
+Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:*/
+
+//RESPOSTA
+
+let n = 7;
+let linha = "";
+
+bordaEsquerda = Math.floor(n/2);
+bordaDireita = Math.floor(n/2);
+for(i=0;i<n;i+=2){
+    for(j=0; j<n ; j+=1){
+        if(i+1 === n){
+            linha+='*';
+        }else if(j === bordaDireita || j === bordaEsquerda){
+            linha+='*';
+        }else{
+            linha+=' ';
+        }
+    }
+    console.log(linha);
+    linha = "";
+    bordaDireita+=1;
+    bordaEsquerda-=1;
+}
