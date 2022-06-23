@@ -117,9 +117,31 @@ Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângul
 
 //RESPOSTA
 
-let n = 5;
+/*let n = 5;
 let linha = "";
 for(i=0;i<n;i+=1){
     linha +="*";
     console.log(linha);
+}*/
+
+
+
+
+/*Exercicio Bonus 3
+Agora inverta o lado do triângulo.*/
+
+//RESPOSTA
+
+let n = 5;
+let linha = "";
+for(i=n;i>0n;i-=1){
+    for(j=0; j<n ; j+=1){
+        if(j+1 >= i){
+            linha+='*'
+        }else{
+            linha+=' '
+        }
+    }
+    console.log(linha);
+    linha = "";
 }
