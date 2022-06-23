@@ -66,7 +66,8 @@ console.log(menor);*/
 Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.*/
 
 //RESPOSTA
-let maior = 0;
+
+/*let maior = 0;
 
 for (let i = 2; i <= 50; i+=1) {
     let eprimo = true;
@@ -82,4 +83,28 @@ for (let i = 2; i <= 50; i+=1) {
 
 }
 
-console.log(maior);
+console.log(maior);*/
+
+
+
+
+// -------------------BONUS------------------------
+
+
+
+
+/*Exercício Bonus 1
+Agora vamos trabalhar com algumas formas geométricas! Faça um programa que, dado um valor n qualquer, seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n.*/
+
+//RESPOSTA
+
+let n =5;
+let linha = "";
+for(i=0;i<n;i+=1){
+
+    for(j=0;j<n;j+=1){
+        linha +="*";
+    }
+    console.log(linha);
+    linha="";
+}
