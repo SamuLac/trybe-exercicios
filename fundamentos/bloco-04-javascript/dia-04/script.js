@@ -215,7 +215,8 @@ console.log(testePalindromo('roda'));*/
 Crie uma função que receba um array de inteiros e retorne o índice do maior valor.*/
 
 //RESPOSTA
-function maiorNumero(numero) {
+
+/*function maiorNumero(numero) {
   let maior = numero[0];
   let indexMaior;
   for (let index = 0; index < numero.length; index+=1) {
@@ -229,4 +230,28 @@ function maiorNumero(numero) {
 
 let num = [2, 3, 6, 7, 10, 1];
 
-console.log(maiorNumero(num));
+console.log(maiorNumero(num));*/
+
+
+
+
+/*Exercício 3
+Crie uma função que receba um array de inteiros e retorne o índice do menor valor.*/
+
+//RESPOSTA
+
+function menorNumero(numero) {
+  let menor = numero[0];
+  let indexMenor;
+  for (let index = 0; index < numero.length; index+=1) {
+    if (numero[index] < menor ) {
+      menor = numero[index];
+      indexMenor = index;
+    }
+  }
+  return indexMenor;
+}
+
+let num = [2, 4, 6, 7, 10, 0, -3];
+
+console.log(menorNumero(num));
