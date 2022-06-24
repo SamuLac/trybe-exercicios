@@ -335,17 +335,17 @@ Crie uma função que receba uma string word e outra string ending. Verifique se
 
 //RESPOSTA
 
-function verificaFinal(palavra,final) {
+function verificaFinal(palavra, final) {
   aux = "";
-  for (let index = palavra.length - final.length; index < palavra.length; index+=1){
-      aux+=palavra[index];
+  for (let index = palavra.length - final.length; index < palavra.length; index += 1) {
+    aux += palavra[index];
   }
-  if(aux === final){
+  if (aux === final) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
 
-console.log(verificaFinal("trybe","be"));
-console.log(verificaFinal("fernandete","fernan"));
+console.log(verificaFinal("trybe", "be"));
+console.log(verificaFinal("fernandete", "fernan"));
