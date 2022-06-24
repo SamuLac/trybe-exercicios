@@ -191,7 +191,9 @@ Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte forma
 /*Exercício 1
 Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.*/
 
-function testePalindromo(palavra) {
+//RESPOSTA
+
+/*function testePalindromo(palavra) {
   let resultado = "";
   for (let index = palavra.length-1; index >= 0; index-=1) {
     resultado += palavra[index];
@@ -204,4 +206,27 @@ function testePalindromo(palavra) {
 }
 
 console.log(testePalindromo('arara'));
-console.log(testePalindromo('roda'));
+console.log(testePalindromo('roda'));*/
+
+
+
+
+/*Exercício 2
+Crie uma função que receba um array de inteiros e retorne o índice do maior valor.*/
+
+//RESPOSTA
+function maiorNumero(numero) {
+  let maior = numero[0];
+  let indexMaior;
+  for (let index = 0; index < numero.length; index+=1) {
+    if (numero[index] > maior ) {
+      maior = numero[index];
+      indexMaior = index;
+    }
+  }
+  return indexMaior;
+}
+
+let num = [2, 3, 6, 7, 10, 1];
+
+console.log(maiorNumero(num));
