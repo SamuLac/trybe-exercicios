@@ -149,7 +149,7 @@ console.log("O livro favorito de " + leitor.nome + " " + leitor.sobrenome + " se
 
 //RESPOSTA
 
-let leitor = {
+/*let leitor = {
   nome: 'Julia',
   sobrenome: 'Pessoa',
   idade: 21,
@@ -168,7 +168,7 @@ leitor.livrosFavoritos.push({
   editora: 'Rocco',
 });
 
-console.log(leitor);
+console.log(leitor);*/
 
 
 
@@ -178,4 +178,30 @@ Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte forma
 
 //RESPOSTA
 
-console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos");
+/*console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos");*/
+
+
+
+
+//-------------------------FUNÇÕES-------------------------
+
+
+
+
+/*Exercício 1
+Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.*/
+
+function testePalindromo(palavra) {
+  let resultado = "";
+  for (let index = palavra.length-1; index >= 0; index-=1) {
+    resultado += palavra[index];
+  }
+  if(resultado === palavra){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(testePalindromo('arara'));
+console.log(testePalindromo('roda'));
