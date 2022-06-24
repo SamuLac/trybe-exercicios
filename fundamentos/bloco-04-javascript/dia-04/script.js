@@ -240,7 +240,7 @@ Crie uma função que receba um array de inteiros e retorne o índice do menor v
 
 //RESPOSTA
 
-function menorNumero(numero) {
+/*function menorNumero(numero) {
   let menor = numero[0];
   let indexMenor;
   for (const key in numero) {
@@ -254,7 +254,7 @@ function menorNumero(numero) {
 
 let num = [2, 4, 6, 7, 10, 0, -3];
 
-console.log(menorNumero(num));
+console.log(menorNumero(num));*/
 
 
 
@@ -277,3 +277,33 @@ Crie uma função que receba um array de nomes e retorne o nome com a maior quan
 nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
 console.log(maiorPalavra(nomes));*/
+
+
+
+
+/*Exercício 5
+Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.*/
+
+//RESPOSTA
+
+function contaNumeros(num) {
+  let cont = 0;
+  let final = 0;
+  let number =0;
+  for (let index of num) {
+    for (let key of num) {
+      if (index === key) {
+        cont+=1; 
+      }
+    }
+    if (cont > final) {
+      final = cont;
+      number = index;
+    }
+    cont = 0;
+  }
+  return number;
+}
+numeros =[2, 3, 2, 5, 8, 2, 3];
+
+console.log(contaNumeros(numeros));
