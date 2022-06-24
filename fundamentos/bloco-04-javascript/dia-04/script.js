@@ -286,7 +286,7 @@ Crie uma função que receba um array de inteiros e retorne o inteiro que mais s
 
 //RESPOSTA
 
-function contaNumeros(num) {
+/*function contaNumeros(num) {
   let cont = 0;
   let final = 0;
   let number =0;
@@ -306,4 +306,22 @@ function contaNumeros(num) {
 }
 numeros =[2, 3, 2, 5, 8, 2, 3];
 
-console.log(contaNumeros(numeros));
+console.log(contaNumeros(numeros));*/
+
+
+
+
+/*Exercício 6
+Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.*/
+
+//RESPOSTA
+function somatorio(n) {
+  let somatorio = 0;
+  for (let index = 1; index <= n; index+=1) {
+    somatorio += index;
+  }
+  return somatorio;
+}
+
+let n = 5;
+console.log(somatorio(n));
