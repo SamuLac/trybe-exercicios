@@ -169,3 +169,13 @@ leitor.livrosFavoritos.push({
 });
 
 console.log(leitor);
+
+
+
+
+/*Exercício 8
+Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos".*/
+
+//RESPOSTA
+
+console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos");
