@@ -219,12 +219,12 @@ Crie uma função que receba um array de inteiros e retorne o índice do maior v
 /*function maiorNumero(numero) {
   let maior = numero[0];
   let indexMaior;
-  for (let index = 0; index < numero.length; index+=1) {
-    if (numero[index] > maior ) {
-      maior = numero[index];
-      indexMaior = index;
+  for (let key in numero) {
+    if (numero[key] > maior ) {
+      maior = numero[key];
+      indexMaior = key;
     }
-  }
+  } 
   return indexMaior;
 }
 
@@ -240,13 +240,13 @@ Crie uma função que receba um array de inteiros e retorne o índice do menor v
 
 //RESPOSTA
 
-/*function menorNumero(numero) {
+function menorNumero(numero) {
   let menor = numero[0];
   let indexMenor;
-  for (let index = 0; index < numero.length; index+=1) {
-    if (numero[index] < menor ) {
-      menor = numero[index];
-      indexMenor = index;
+  for (const key in numero) {
+    if (numero[key] < menor) {
+      menor = numero[key];
+      indexMenor = key;
     }
   }
   return indexMenor;
@@ -254,7 +254,7 @@ Crie uma função que receba um array de inteiros e retorne o índice do menor v
 
 let num = [2, 4, 6, 7, 10, 0, -3];
 
-console.log(menorNumero(num));*/
+console.log(menorNumero(num));
 
 
 
@@ -264,7 +264,7 @@ Crie uma função que receba um array de nomes e retorne o nome com a maior quan
 
 //RESPOSTA
 
-function maiorPalavra(palavras) {
+/*function maiorPalavra(palavras) {
   let maiorPalavra = palavras[0];
   for (const key of palavras) {
     if (key.length > maiorPalavra.length) {
@@ -276,4 +276,4 @@ function maiorPalavra(palavras) {
 
 nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
-console.log(maiorPalavra(nomes));
+console.log(maiorPalavra(nomes));*/
