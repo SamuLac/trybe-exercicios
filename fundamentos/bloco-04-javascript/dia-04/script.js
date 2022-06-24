@@ -315,7 +315,8 @@ console.log(contaNumeros(numeros));*/
 Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.*/
 
 //RESPOSTA
-function somatorio(n) {
+
+/*function somatorio(n) {
   let somatorio = 0;
   for (let index = 1; index <= n; index+=1) {
     somatorio += index;
@@ -324,4 +325,27 @@ function somatorio(n) {
 }
 
 let n = 5;
-console.log(somatorio(n));
+console.log(somatorio(n));*/
+
+
+
+
+/*Exercício 7
+Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.*/
+
+//RESPOSTA
+
+function verificaFinal(palavra,final) {
+  aux = "";
+  for (let index = palavra.length - final.length; index < palavra.length; index+=1){
+      aux+=palavra[index];
+  }
+  if(aux === final){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(verificaFinal("trybe","be"));
+console.log(verificaFinal("fernandete","fernan"));
