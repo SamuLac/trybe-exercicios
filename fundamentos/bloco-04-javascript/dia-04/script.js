@@ -240,7 +240,7 @@ Crie uma função que receba um array de inteiros e retorne o índice do menor v
 
 //RESPOSTA
 
-function menorNumero(numero) {
+/*function menorNumero(numero) {
   let menor = numero[0];
   let indexMenor;
   for (let index = 0; index < numero.length; index+=1) {
@@ -254,4 +254,26 @@ function menorNumero(numero) {
 
 let num = [2, 4, 6, 7, 10, 0, -3];
 
-console.log(menorNumero(num));
+console.log(menorNumero(num));*/
+
+
+
+
+/*Exercício 4
+Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.*/
+
+//RESPOSTA
+
+function maiorPalavra(palavras) {
+  let maiorPalavra = palavras[0];
+  for (const key of palavras) {
+    if (key.length > maiorPalavra.length) {
+      maiorPalavra = key;
+    }
+  }
+  return maiorPalavra;
+}
+
+nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+console.log(maiorPalavra(nomes));
