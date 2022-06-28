@@ -37,3 +37,10 @@ function mudaBgCenterContent(i, color){
 }
 cor = 'rgb(255,255,255)';
 mudaBgCenterContent(0, cor);
+
+//EXERCICIO 4
+function corrigiJS() {
+    let aux = document.getElementsByClassName("title")[0];
+    aux.innerText = 'Exercício 5.1 - JavaScript';
+}
+corrigiJS();
