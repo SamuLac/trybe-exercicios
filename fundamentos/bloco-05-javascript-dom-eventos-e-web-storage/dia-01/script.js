@@ -21,3 +21,11 @@ function mudaParagrafo(text, i) {
 texto = 'Olá sou o Samuel em 2024 possuo 23 anos sou desenvolvedor web full stack me formei pela trybe e trabalho a 1 ano aqui na empresa x'
 
 mudaParagrafo(texto, 1);
+
+//EXERCICIO 2
+function mudaBgMainContent(i, color){
+    let aux = document.getElementsByClassName("main-content");
+    aux[i].style.backgroundColor = color; 
+}
+cor = 'rgb(76,164,109)';
+mudaBgMainContent(0, cor);
