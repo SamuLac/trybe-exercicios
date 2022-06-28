@@ -54,3 +54,12 @@ function transformUppercase(tag) {
 }
 tag = "p";
 transformUppercase(tag);
+
+//EXERCICIO 6
+function tagConsole(tag) {
+    let aux = document.getElementsByTagName(tag);
+    for (let i = 0; i < aux.length; i += 1) {
+        console.log(aux[i].innerText);
+    }
+}
+tagConsole(tag);
