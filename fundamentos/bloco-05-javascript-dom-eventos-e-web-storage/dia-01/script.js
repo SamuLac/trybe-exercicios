@@ -29,3 +29,11 @@ function mudaBgMainContent(i, color){
 }
 cor = 'rgb(76,164,109)';
 mudaBgMainContent(0, cor);
+
+//EXERCICIO 3
+function mudaBgCenterContent(i, color){
+    let aux = document.getElementsByClassName("main-content")[0].getElementsByClassName("center-content");
+    aux[i].style.backgroundColor = color; 
+}
+cor = 'rgb(255,255,255)';
+mudaBgCenterContent(0, cor);
