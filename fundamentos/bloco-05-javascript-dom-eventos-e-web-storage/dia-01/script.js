@@ -44,3 +44,13 @@ function corrigiJS() {
     aux.innerText = 'Exercício 5.1 - JavaScript';
 }
 corrigiJS();
+
+//EXERCICIO 5
+function transformUppercase(tag) {
+    let aux = document.getElementsByTagName(tag);
+    for (let i = 0; i < aux.length; i += 1) {
+        aux[i].style.textTransform = 'uppercase';
+    }
+}
+tag = "p";
+transformUppercase(tag);
