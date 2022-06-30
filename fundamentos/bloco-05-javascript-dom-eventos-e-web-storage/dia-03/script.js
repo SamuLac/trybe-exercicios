@@ -46,14 +46,14 @@ for (let i = 0; i < decemberDaysList.length; i += 1) {
 //Exercicio 2
 
 let buttonsContainer = document.getElementsByClassName('buttons-container')
-let buttons = document.createElement('button');
-buttons.innerText = 'Feriados';
-buttons.id = 'btn-holiday'
-buttonsContainer[0].appendChild(buttons);
+let buttonHoliday = document.createElement('button');
+buttonHoliday.innerText = 'Feriados';
+buttonHoliday.id = 'btn-holiday'
+buttonsContainer[0].appendChild(buttonHoliday);
 
 //Exercicio 3
 checkClick = true;
-buttons.addEventListener("click", mudaCor)
+buttonHoliday.addEventListener("click", mudaCor)
 function mudaCor() {
   if (checkClick) {
     let feriadosCor = document.getElementsByClassName('holiday');
@@ -69,3 +69,10 @@ function mudaCor() {
     checkClick = true;
   }
 }
+
+//Exercicio 4
+
+let buttonFriday = document.createElement('button');
+buttonFriday.innerText = 'Sexta-Feira';
+buttonFriday.id = 'btn-friday'
+buttonsContainer[0].appendChild(buttonFriday);
