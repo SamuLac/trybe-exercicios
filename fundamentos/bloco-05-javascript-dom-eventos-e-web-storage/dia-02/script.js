@@ -77,3 +77,7 @@ subTitle1.className = 'description';
 //Exercicio 12
 
 main.removeChild(leftSection);
+
+//Exercicio 13
+
+rightSection.style.marginRight = 'auto';
