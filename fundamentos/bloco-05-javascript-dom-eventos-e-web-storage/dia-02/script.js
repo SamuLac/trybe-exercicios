@@ -51,3 +51,14 @@ for (let i = 0; i < rightListContent.length; i += 1) {
     rightListItem.innerText = item;   
     rightList.appendChild(rightListItem);
 }
+
+//Exercicio 9
+
+let subTitleContent = ['Sub 1', 'Sub 2', 'Sub 3'];
+
+for (let i = 0; i < subTitleContent.length; i += 1) {
+    let subTitle = document.createElement('h3');
+    subTitle.innerText = subTitleContent[i]
+    main.appendChild(subTitle);
+}
+
