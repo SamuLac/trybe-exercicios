@@ -76,3 +76,29 @@ let buttonFriday = document.createElement('button');
 buttonFriday.innerText = 'Sexta-Feira';
 buttonFriday.id = 'btn-friday'
 buttonsContainer[0].appendChild(buttonFriday);
+
+//Exercicio 5
+
+checkClick2 = true;
+buttonFriday.addEventListener("click", mudaText)
+let feriadosText = document.getElementsByClassName('friday');
+let listaAux = [];
+for (let i = 0; i < feriadosText.length; i += 1) {
+  listaAux[i] = feriadosText[i].innerText
+}
+
+function mudaText() {
+  if (checkClick2) {
+    for (let i = 0; i < feriadosText.length; i += 1) {
+      feriadosText[i].innerText = 'Aqui';
+    }
+    checkClick2 = false;
+  } else {
+    let feriadosText = document.getElementsByClassName('friday');
+    for (let i = 0; i < feriadosText.length; i += 1) {
+      feriadosText[i].innerText = listaAux[i];
+    }
+    checkClick2 = true;
+  }
+}
+
