@@ -45,11 +45,27 @@ for (let i = 0; i < decemberDaysList.length; i += 1) {
 
 //Exercicio 2
 
-  let buttonsContainer = document.getElementsByClassName('buttons-container')
-  let buttons = document.createElement('button');
-  buttons.innerText = 'Feriados';
-  buttons.id = 'btn-holiday'
-  buttonsContainer[0].appendChild(buttons);
+let buttonsContainer = document.getElementsByClassName('buttons-container')
+let buttons = document.createElement('button');
+buttons.innerText = 'Feriados';
+buttons.id = 'btn-holiday'
+buttonsContainer[0].appendChild(buttons);
 
 //Exercicio 3
-
+checkClick = true;
+buttons.addEventListener("click", mudaCor)
+function mudaCor() {
+  if (checkClick) {
+    let feriadosCor = document.getElementsByClassName('holiday');
+    for (let i = 0; i < feriadosCor.length; i += 1) {
+      feriadosCor[i].style.backgroundColor = 'yellow';
+    }
+    checkClick = false;
+  } else {
+    let feriadosCor = document.getElementsByClassName('holiday');
+    for (let i = 0; i < feriadosCor.length; i += 1) {
+      feriadosCor[i].style.backgroundColor = 'rgb(238,238,238)';
+    }
+    checkClick = true;
+  }
+}
