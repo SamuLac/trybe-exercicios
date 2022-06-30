@@ -11,4 +11,8 @@ bodyPosition.appendChild(title);
 let main = document.createElement('main');
 main.className = 'main-content';
 bodyPosition.appendChild(main);
-console.log(main);
+
+//Exercicio 3
+let centerSection = document.createElement('section');
+centerSection.className = 'center-content';
+main.appendChild(centerSection);
