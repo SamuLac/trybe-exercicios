@@ -33,3 +33,9 @@ main.appendChild(leftSection);
 let rightSection = document.createElement('section');
 rightSection.className = 'right-content';
 main.appendChild(rightSection);
+
+//Exercicio 7
+let leftImg = document.createElement('img');
+leftImg.src = 'https://picsum.photos/200';
+leftImg.className = 'small-image';
+leftSection.appendChild(leftImg);
