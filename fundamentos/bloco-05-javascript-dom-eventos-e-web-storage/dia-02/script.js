@@ -85,3 +85,8 @@ rightSection.style.marginRight = 'auto';
 //Exercicio 14
 
 centerSection.parentNode.style.backgroundColor = 'green';
+
+//Exercicio 15
+
+rightList.removeChild(rightList.lastChild);
+rightList.removeChild(rightList.lastChild);
