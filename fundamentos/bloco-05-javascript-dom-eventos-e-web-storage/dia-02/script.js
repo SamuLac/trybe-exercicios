@@ -65,3 +65,12 @@ for (let i = 0; i < subTitleContent.length; i += 1) {
 //Exercicio 10
 
 title.className = 'title';
+
+//Exercicio 11
+subTitle3 = main.lastChild;
+subTitle2 = subTitle3.previousSibling;
+subTitle1 = subTitle2.previousSibling;
+
+subTitle3.className = 'description';
+subTitle2.className = 'description';
+subTitle1.className = 'description';
