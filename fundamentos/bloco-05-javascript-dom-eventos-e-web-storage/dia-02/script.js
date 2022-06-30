@@ -1,7 +1,7 @@
 //Exercício 1
 
 let titleContent = 'Exercício 5.2 - JavaScript DOM';
-let bodyPosition = document.lastChild.lastChild;
+let bodyPosition = document.body;
 let title = document.createElement('h1');
 title.innerText = titleContent;
 bodyPosition.appendChild(title);
@@ -81,3 +81,7 @@ main.removeChild(leftSection);
 //Exercicio 13
 
 rightSection.style.marginRight = 'auto';
+
+//Exercicio 14
+
+centerSection.parentNode.style.backgroundColor = 'green';
