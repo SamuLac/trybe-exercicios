@@ -62,3 +62,6 @@ for (let i = 0; i < subTitleContent.length; i += 1) {
     main.appendChild(subTitle);
 }
 
+//Exercicio 10
+
+title.className = 'title';
