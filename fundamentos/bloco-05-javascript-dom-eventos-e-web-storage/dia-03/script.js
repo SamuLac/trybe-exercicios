@@ -43,3 +43,15 @@ for (let i = 0; i < decemberDaysList.length; i += 1) {
     listaDezembro.appendChild(decemberDaysItems);
 }
 
+//Exercicio 2
+
+function criaFeriados(feriados) {
+    let buttonsContainer = document.getElementsByClassName('buttons-container')
+    let buttons = document.createElement('button');
+    buttons.innerText = feriados;
+    buttons.id = 'btn-holiday'
+    buttonsContainer[0].appendChild(buttons);
+}
+
+criaFeriados('Natal');
+criaFeriados('Ano Novo');
