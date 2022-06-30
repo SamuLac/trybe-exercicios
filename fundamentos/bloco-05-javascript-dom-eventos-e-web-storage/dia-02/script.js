@@ -39,3 +39,15 @@ let leftImg = document.createElement('img');
 leftImg.src = 'https://picsum.photos/200';
 leftImg.className = 'small-image';
 leftSection.appendChild(leftImg);
+
+//Exercicio 8
+let rightListContent = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+let rightList = document.createElement('ul');
+rightSection.appendChild(rightList);
+
+for (let i = 0; i < rightListContent.length; i += 1) {
+    let item = rightListContent[i];
+    let rightListItem = document.createElement('li');
+    rightListItem.innerText = item;   
+    rightList.appendChild(rightListItem);
+}
