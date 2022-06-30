@@ -1,19 +1,19 @@
 function createDaysOfTheWeek() {
-    const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
-    const weekDaysList = document.querySelector('.week-days');
+  const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+  const weekDaysList = document.querySelector('.week-days');
 
-    for (let index = 0; index < weekDays.length; index += 1) {
-        const days = weekDays[index];
-        const dayListItem = document.createElement('li');
-        dayListItem.innerHTML = days;
+  for (let index = 0; index < weekDays.length; index += 1) {
+    const days = weekDays[index];
+    const dayListItem = document.createElement('li');
+    dayListItem.innerHTML = days;
 
-        weekDaysList.appendChild(dayListItem);
-    };
+    weekDaysList.appendChild(dayListItem);
+  };
 };
 
 createDaysOfTheWeek();
 
-  // Escreva seu código abaixo.
+// Escreva seu código abaixo.
 
 //Exercicio 1  
 /*    Crie um calendário dinamicamente.
@@ -28,30 +28,32 @@ let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1
 let listaDezembro = document.getElementById('days');
 
 for (let i = 0; i < decemberDaysList.length; i += 1) {
-    let item = decemberDaysList[i];
-    let decemberDaysItems = document.createElement('li');
-    decemberDaysItems.innerText = item;
-    if (item === 24 || item === 25 || item === 31) {
-        decemberDaysItems.classList.add('holiday');
-        if (item === 25) {
-            decemberDaysItems.classList.add('friday');
-        }
-    }else if (item === 4 || item === 11 || item === 18) {
-        decemberDaysItems.classList.add('friday');
+  let item = decemberDaysList[i];
+  let decemberDaysItems = document.createElement('li');
+  decemberDaysItems.innerText = item;
+  if (item === 24 || item === 25 || item === 31) {
+    decemberDaysItems.classList.add('holiday');
+    if (item === 25) {
+      decemberDaysItems.classList.add('friday');
     }
-    decemberDaysItems.classList.add('day');
-    listaDezembro.appendChild(decemberDaysItems);
+  } else if (item === 4 || item === 11 || item === 18) {
+    decemberDaysItems.classList.add('friday');
+  }
+  decemberDaysItems.classList.add('day');
+  listaDezembro.appendChild(decemberDaysItems);
 }
 
 //Exercicio 2
 
 function criaFeriados(feriados) {
-    let buttonsContainer = document.getElementsByClassName('buttons-container')
-    let buttons = document.createElement('button');
-    buttons.innerText = feriados;
-    buttons.id = 'btn-holiday'
-    buttonsContainer[0].appendChild(buttons);
+  let buttonsContainer = document.getElementsByClassName('buttons-container')
+  let buttons = document.createElement('button');
+  buttons.innerText = feriados;
+  buttons.id = 'btn-holiday'
+  buttonsContainer[0].appendChild(buttons);
 }
 
 criaFeriados('Natal');
 criaFeriados('Ano Novo');
+
+//Exercicio 3
