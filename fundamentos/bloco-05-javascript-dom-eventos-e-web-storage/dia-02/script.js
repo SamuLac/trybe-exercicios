@@ -22,3 +22,8 @@ let centerParagraph = document.createElement('p');
 centerParagraph.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a est consequat, elementum tortor quis, cursus dui. Nullam sollicitudin neque a ligula molestie dignissim. Pellentesque nec aliquam ex, eget auctor sem. Vestibulum turpis tellus, ultricies vel arcu sed, tempus accumsan lorem.';
 centerSection.appendChild(centerParagraph);
 
+//Exercicio 5
+
+let leftSection = document.createElement('section');
+leftSection.className = 'left-content';
+main.appendChild(leftSection);
