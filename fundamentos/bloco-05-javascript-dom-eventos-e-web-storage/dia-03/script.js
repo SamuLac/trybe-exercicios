@@ -128,3 +128,12 @@ let task = document.createElement('span');
 task.innerText = 'Cozinhar';
 paiTask[0].appendChild(task);
 
+//Exercicio 8
+
+function criaDiv(cor) {
+  newTasks = document.createElement('div');
+  newTasks.classList.add('task');
+  newTasks.style.backgroundColor = cor;
+  paiTask[0].appendChild(newTasks)
+}
+criaDiv('red');
