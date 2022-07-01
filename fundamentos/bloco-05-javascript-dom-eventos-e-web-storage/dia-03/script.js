@@ -137,3 +137,19 @@ function criaDiv(cor) {
   paiTask[0].appendChild(newTasks)
 }
 criaDiv('red');
+
+//Exercicio 8
+for (let i = 0; i < paiTask.length; i += 1) {
+  paiTask[i].addEventListener('click',selected);
+}
+
+let checkClick3 = true;
+function selected(event){
+  if (checkClick3) {
+    event.target.classList.add('task-selected');
+    checkClick3 = false;
+  } else {
+    event.target.classList.remove('task-selected');
+    checkClick3 = true;
+  }
+}
