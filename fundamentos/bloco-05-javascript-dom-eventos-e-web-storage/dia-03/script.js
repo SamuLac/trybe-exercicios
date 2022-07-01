@@ -102,3 +102,20 @@ function mudaText() {
   }
 }
 
+//Exercicio 6
+let diasZoom = document.getElementsByClassName('day');
+for (let i = 0; i < diasZoom.length; i += 1) {
+  diasZoom[i].addEventListener('mouseover', zoomEmCima);
+  diasZoom[i].addEventListener('mouseleave', zoomSaiuDeCima)
+}
+
+
+function zoomEmCima(event) {
+  event.target.style.fontSize = '60px';
+  event.target.style.cursor = 'none';
+
+}
+function zoomSaiuDeCima(event) {
+  event.target.style.fontSize = '20px';
+  event.target.style.cursor = 'auto';
+}
