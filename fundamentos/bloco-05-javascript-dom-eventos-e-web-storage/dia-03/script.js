@@ -103,6 +103,7 @@ function mudaText() {
 }
 
 //Exercicio 6
+
 let diasZoom = document.getElementsByClassName('day');
 for (let i = 0; i < diasZoom.length; i += 1) {
   diasZoom[i].addEventListener('mouseover', zoomEmCima);
@@ -119,3 +120,11 @@ function zoomSaiuDeCima(event) {
   event.target.style.fontSize = '20px';
   event.target.style.cursor = 'auto';
 }
+
+//Exercicio 7
+
+let paiTask = document.getElementsByClassName('my-tasks');
+let task = document.createElement('span');
+task.innerText = 'Cozinhar';
+paiTask[0].appendChild(task);
+
