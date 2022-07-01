@@ -1,7 +1,9 @@
 //Set Configs
 document.body.style.backgroundColor = localStorage.getItem('BackGround');
 document.getElementById('texto').style.color = localStorage.getItem('FontColor');
-document.getElementById('texto').style.fontSize = localStorage.getItem('FontSize')
+document.getElementById('texto').style.fontSize = localStorage.getItem('FontSize');
+document.getElementById('texto').style.lineHeight = localStorage.getItem('lineHeight');
+document.getElementById('texto').style.fontFamily = localStorage.getItem('fontfamily');
 
 //Functions
 
@@ -32,7 +34,28 @@ let buttonTamanhoFonte = document.getElementById('button-tamanho-fonte');
 buttonTamanhoFonte.addEventListener('click',tamanhoFonte);
 
 function tamanhoFonte(){
-    let a = document.getElementById('texto');
-    a.style.fontSize = tamanhofonte.value;
+    let p = document.getElementById('texto');
+    p.style.fontSize = tamanhofonte.value;
     localStorage.setItem('FontSize', tamanhofonte.value);
+}
+
+
+//Line-Heigth
+let buttonEspacamento = document.getElementById('button-espacamento');
+buttonEspacamento.addEventListener('click',espacoLinha);
+
+function espacoLinha(){
+    let p = document.getElementById('texto');
+    p.style.lineHeight = espacamento.value;
+    localStorage.setItem('lineHeight', espacamento.value);
+}
+
+//Font-Family
+let buttonFont = document.getElementById('button-fontstyle');
+buttonFont.addEventListener('click',fontType);
+
+function fontType(){
+    let p = document.getElementById('texto');
+    p.style.fontFamily = fontstyle.value;
+    localStorage.setItem('fontFamily', fontstyle.value);
 }
