@@ -143,6 +143,8 @@ for (let i = 0; i < paiTask.length; i += 1) {
   paiTask[i].addEventListener('click',selected);
 }
 
+//Exercicio 9
+
 let checkClick3 = true;
 function selected(event){
   if (checkClick3) {
